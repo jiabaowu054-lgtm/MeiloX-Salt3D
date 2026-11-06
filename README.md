@@ -20,13 +20,21 @@
 
 ---
 
+> [!IMPORTANT]
+> ### 📌 项目源码来源与开源版权声明
+> - **上游源项目代码仓库**：👉 **[https://github.com/NEORUAA/MeiloX](https://github.com/NEORUAA/MeiloX)**（原作者：**[NEORUAA](https://github.com/NEORUAA)**）
+> - **技术基石项目**：👉 **[https://github.com/ljyh223/Mei](https://github.com/ljyh223/Mei)**
+> - **二次开发说明**：本项目系基于 **`NEORUAA/MeiloX`** 的开源代码进行深度定制与增强的派生版本。所有核心网易云业务架构、登录逻辑与 Apple Music 风格液态玻璃设计均源自原作者与开源社区贡献。本项目在此基石之上，重点二次开发实现了 **椒盐音乐 (Salt Player) 风格的 3D 空间立体歌词、行间距自定义以及 Android 原生 120Hz 高刷重构**。
+
+---
+
 ## 📖 项目简介
 
-本项目系基于著名开源 Android 客户端 **[NEORUAA/MeiloX](https://github.com/NEORUAA/MeiloX)** 深度定制的衍生版本。
+本项目旨在为广大音乐爱好者提供一个开箱即用的、拥有极致歌词视觉体验的网易云音乐第三方客户端。
 
-在保留 MeiloX 优秀的 Apple Music 风格液态玻璃设计、完整网易云音乐功能与生态的基础上，本版本重点实现了**类似椒盐音乐 (Salt Player) 风格的沉浸式 3D 立体空间歌词**，并对 Android 手机高刷屏进行了针对性的**全局 120Hz/144Hz 性能重构**。
+在完整保留 MeiloX 优秀的 Apple Music 风格液态玻璃设计、网易云音乐全功能生态的前提下，本版本重点实现了**类似椒盐音乐 (Salt Player) 风格的沉浸式 3D 立体空间歌词**，并对 Android 手机高刷屏进行了针对性的**全局 120Hz/144Hz 性能重构**。
 
-> ⚠️ **声明**：本项目为非官方个人开源二次开发，不隶属于网易云音乐或 Apple；音乐版权归网易云音乐及相关权利人所有。
+> ⚠️ **免责声明**：本项目为非官方个人开源二次开发，不隶属于网易云音乐或 Apple；音乐版权归网易云音乐及相关权利人所有。
 
 ---
 
@@ -72,11 +80,9 @@ cd MeiloX-Salt3D
 git clone https://github.com/NEORUAA/Glasmio.git ../Glasmio
 git -C ../Glasmio checkout 700a611f9024c8f3bd9f0b8dd26d939a0dcbeb72
 
-# 3. 编译 Debug 或 Release APK
+# 3. 编译 Release 正式版 APK
 ./gradlew -Pglasmio.source=true :app:assembleRelease
 ```
-
-编译输出的 APK 位于 `app/build/outputs/apk/release/app-release.apk`。
 
 ---
 
@@ -84,7 +90,7 @@ git -C ../Glasmio checkout 700a611f9024c8f3bd9f0b8dd26d939a0dcbeb72
 
 衷心感谢以下优秀的开源项目与作者：
 
-- **[NEORUAA/MeiloX](https://github.com/NEORUAA/MeiloX)**：本项目的基础，提供了优秀的 Apple Music 风格界面与完备的网易云功能。
+- **[NEORUAA/MeiloX](https://github.com/NEORUAA/MeiloX)**：本项目代码的来源基石，提供了优秀的 Apple Music 风格界面与完备的网易云功能。
 - **[ljyh223/Mei](https://github.com/ljyh223/Mei)**：MeiloX 灵感与技术架构的最初基石。
 - **[椒盐音乐 (Salt Player)](https://saltplayer.app/)**：在移动端播放器歌词视觉美学上的标杆，为本项目的 3D 空间立体歌词提供了关键的审美启发。
 
@@ -92,4 +98,4 @@ git -C ../Glasmio checkout 700a611f9024c8f3bd9f0b8dd26d939a0dcbeb72
 
 ## 📄 开源许可证
 
-本项目遵循 **[GPL-3.0 License](./LICENSE)** 开源协议。
+本项目严格遵循 **[GPL-3.0 License](./LICENSE)** 开源协议。
